@@ -55,7 +55,7 @@ class MainViewModel: ViewModel() {
             }
 
             override fun onFailure(call: Call<CoctailsDvo>, t: Throwable) {
-                Log.d("trouble", "ProblemWithApi")
+                Log.d("trouble", "ProblemWithYourApi")
             }
         })
     }
@@ -69,7 +69,7 @@ class MainViewModel: ViewModel() {
             }
 
             override fun onFailure(call: Call<DrinksAllInfo>, t: Throwable) {
-                Log.d("trouble", "ProblemWithApi")
+                Log.d("trouble", "ProblemWithYourApi")
             }
 
 
