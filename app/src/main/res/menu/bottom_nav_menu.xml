@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_alcohol"
+        android:enabled="true"
+        android:id="@+id/alcoholFragment"
+        android:title="@string/alcohol"/>
+
+    <item
+        android:icon="@drawable/ic_juice"
+        android:enabled="true"
+        android:id="@+id/nonAlcoholFragment"
+        android:title="@string/non_alcohol"/>
+</menu>

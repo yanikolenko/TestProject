@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/alcoholFragment">
+
+    <fragment
+        android:id="@+id/alcoholFragment"
+        android:name="com.example.barmenu.ui.bottom_nav.AlcoholFragment"
+        android:label=""
+        tools:layout="@layout/fragment_alcohol" >
+        <action
+            android:id="@+id/action_alcoholFragment_to_detailInfo"
+            app:destination="@id/detailInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/nonAlcoholFragment"
+        android:name="com.example.barmenu.ui.bottom_nav.NonAlcoholFragment"
+        android:label=""
+        tools:layout="@layout/fragment_non_alcohol" >
+        <action
+            android:id="@+id/action_nonAlcoholFragment_to_detailInfo"
+            app:destination="@id/detailInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailInfo"
+        android:name="com.example.barmenu.ui.detail_info.DetailInfoFragment"
+        android:label=""
+        tools:layout="@layout/fragment_detail_info" >
+        <argument
+            android:name="something"
+            app:argType="integer"
+            android:defaultValue="1" />
+
+    </fragment>
+</navigation>
